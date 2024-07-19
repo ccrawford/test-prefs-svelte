@@ -1,6 +1,8 @@
 {
     "extends": "@tsconfig/svelte/tsconfig.json",
     "compilerOptions": {
+      "allowJs" : true,
+      "checkJs": true,
       "strict": true,
       "target": "ESNext",
       "module": "ESNext",
@@ -8,7 +10,9 @@
       "isolatedModules": true,
       "esModuleInterop": true,
       "forceConsistentCasingInFileNames": true,
-      "resolveJsonModule": true
+      "resolveJsonModule": true,
+      "skipLibCheck": true,
+      "sourceMap": true,
     },
     "include": ["src/**/*"],
     "exclude": ["node_modules/*", "__sapper__/*", "public/*"]
